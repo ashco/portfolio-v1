@@ -1,0 +1,35 @@
+.container1 {
+	display: grid;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	grid-template-columns: 60px auto;
+	grid-template-rows: auto;
+  grid-template-areas: 
+    "navbar main-content";
+
+}
+
+.navbar {
+	background-color: #181818;
+	grid-area: navbar;
+}
+
+.main-content {
+	grid-area: main-content;
+}
+
+@media only screen and (max-width: 960px) {
+	.container1 {
+		background-color: aqua;
+		grid-template-columns: auto;
+		grid-template-rows: 60px auto;
+		grid-template-areas: 
+			"navbar"
+	 		"main-content";
+	}
+}
+
+

@@ -1,7 +1,8 @@
 body {
-	color: rgb(54, 190, 145);
+	/* color: rgb(54, 190, 145); */
 }
 
+/* MAIN & NAV */
 .container1 {
 	display: grid;
 	position: absolute;
@@ -24,11 +25,16 @@ body {
 }
 
 ul.navbar__linkbox {
-	color: rgb(54, 190, 145);
+	color: #fff;
 	/* Fix this to be weird */
 	position: relative;
-	top: 8.9%;
+	top: 7%;
 }
+
+li {
+	margin: 1.5em 0 1.5em 0;
+}
+
 
 .main {
 	grid-area: main-content;
@@ -53,4 +59,49 @@ ul.navbar__linkbox {
 		display: flex;
 		flex-direction: row;
 	}
+
+	li {
+		margin: 0 1.5em 0 1.5em;
+	}
 }
+
+/* SECTION FORMATTING */
+section.home {
+	color: #fff;
+}
+
+section.about {
+	color: #1B9CE2;
+}
+
+section.portfolio {
+	color: rgb(54, 190, 145);
+}
+
+section.contact {
+	color: orangered;
+}
+
+/* CONTENT BOXES */
+.box {
+
+}
+
+div.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box--portfolio {
+
+	background-color: #333;
+	/* flex-grow: 1; */
+	/* width: 85%; */
+	height: 85%;
+	margin: 100px 100px 100px 100px;
+
+
+}
+
+

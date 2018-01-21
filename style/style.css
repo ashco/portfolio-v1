@@ -1,5 +1,5 @@
-* {
-	color: #eee;
+body {
+	color: rgb(54, 190, 145);
 }
 
 .container1 {
@@ -15,20 +15,19 @@
     "navbar main-content";
 }
 
-@media only screen and (max-width: 960px) {
-	.container1 {
-		grid-template-columns: auto;
-		grid-template-rows: 60px auto;
-		grid-template-areas: 
-			"navbar"
-			 "main-content";
-	}
-}
-
 .navbar {
+	display: flex;
+	justify-content: center;
 	background-color: #181818;
 	grid-area: navbar;
 	z-index: 1;
+}
+
+ul.navbar__linkbox {
+	color: rgb(54, 190, 145);
+	/* Fix this to be weird */
+	position: relative;
+	top: 8.9%;
 }
 
 .main {
@@ -36,7 +35,22 @@
 	overflow: auto;
 }
 
-/* PUSHPIN
-html, body, .block {
-	height: 100%;
-} */
+.main__header {
+	text-align: center;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 960px) {
+	.container1 {
+		grid-template-columns: auto;
+		grid-template-rows: 60px auto;
+		grid-template-areas: 
+			"navbar"
+			"main-content";
+	}
+
+	ul.navbar__linkbox {
+		display: flex;
+		flex-direction: row;
+	}
+}

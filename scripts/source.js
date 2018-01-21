@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	$('#main-content').fullpage();
+	$('#main-content').fullpage({
+		anchors:['home', 'about', 'portfolio', 'contact']
+	});
 });

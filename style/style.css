@@ -2,7 +2,7 @@
 	color: #eee;
 }
 
-#container1 {
+.container1 {
 	display: grid;
 	position: absolute;
 	top: 0;
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 960px) {
-	#container1 {
+	.container1 {
 		grid-template-columns: auto;
 		grid-template-rows: 60px auto;
 		grid-template-areas: 
@@ -25,18 +25,18 @@
 	}
 }
 
-#navbar {
+.navbar {
 	background-color: #181818;
 	grid-area: navbar;
 	z-index: 1;
 }
 
-#main-content {
+.main {
 	grid-area: main-content;
 	overflow: auto;
 }
 
-/* PUSHPIN */
+/* PUSHPIN
 html, body, .block {
 	height: 100%;
-}
+} */

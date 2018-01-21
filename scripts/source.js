@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$('.navbar__link').css('color', '#fff');
 			}, () => {
 			$('.navbar__link').css('color', 'rgb(54, 190, 145)');
-		console.log(this)
+		console.log(this);
 	});
 
 	// $('section.active')

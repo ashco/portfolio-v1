@@ -35,7 +35,6 @@ li {
 	margin: 1.5em 0 1.5em 0;
 }
 
-
 .main {
 	grid-area: main-content;
 	overflow: auto;
@@ -43,26 +42,6 @@ li {
 
 .main__header {
 	text-align: center;
-}
-
-/* MOBILE */
-@media only screen and (max-width: 960px) {
-	.container1 {
-		grid-template-columns: auto;
-		grid-template-rows: 60px auto;
-		grid-template-areas: 
-			"navbar"
-			"main-content";
-	}
-
-	ul.navbar__linkbox {
-		display: flex;
-		flex-direction: row;
-	}
-
-	li {
-		margin: 0 1.5em 0 1.5em;
-	}
 }
 
 /* SECTION FORMATTING */
@@ -93,15 +72,53 @@ div.slide {
 	align-items: center;
 }
 
-.box--portfolio {
-
+/* PORTFOLIO */
+.box__portfolio {
+	display: flex;
+	align-items: flex-end;
 	background-color: #333;
-	/* flex-grow: 1; */
-	/* width: 85%; */
 	height: 85%;
 	margin: 100px 100px 100px 100px;
-
-
 }
 
+.portfolio__textbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+}
 
+.portfolio__textbox > h1, .portfolio__textbox--links {
+	margin: 24px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 960px) {
+	.container1 {
+		grid-template-columns: auto;
+		grid-template-rows: 60px auto;
+		grid-template-areas: 
+			"navbar"
+			"main-content";
+	}
+
+	ul.navbar__linkbox {
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* margins for nav buttons */
+	li {
+		margin: 0 1.5em 0 1.5em;
+	}
+	
+	div.slide {
+		align-items: flex-start;
+	}
+
+	.box__portfolio {
+		margin: 0;
+		align-self: center;
+	}
+
+}

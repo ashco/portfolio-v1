@@ -88,6 +88,20 @@ div.slide {
 	width: 100%;
 }
 
+.box__portfolio {
+	background-size: cover;
+	background-position: center; 
+
+}
+
+.box--solitaire {
+	background-image: url('../img/solitaire-screenshot.png');
+}
+
+.box--recrypt {
+	background-image: url('../img/recrypt-screenshot.png');
+}
+
 .portfolio__textbox > h1, .portfolio__textbox--links {
 	margin: 24px;
 }

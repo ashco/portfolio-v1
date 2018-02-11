@@ -7,10 +7,10 @@ $(document).ready(function() {
 
 	//Nav icon change
 	$('.navbar__link').hover(() => {
-			$('.navbar__link').css('color', '#fff');
-			}, () => {
 			$('.navbar__link').css('color', 'rgb(54, 190, 145)');
-		console.log(this);
+			}, () => {
+			$('.navbar__link').css('color', '#fff');
+		// console.log(this);
 	});
 
 	// $('section.active')

@@ -84,24 +84,49 @@ div.slide {
 	align-items: flex-end;
 	height: 85%;
 	margin: 100px 100px 100px 100px;
+	background-size: cover;
+	background-position: center top; 
+	
+	
+	/* NEED THIS FOR SLIDE UP */
+	overflow: hidden;
+	position: relative;
+	  
+
 }
 
 .portfolio__textbox {
 	background-color: var(--textbox-color);
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	flex-direction: column;
+	/* justify-content: space-between;
+	align-items: flex-start; */
+	/* width: 100%; */
+	
+	/* NEED THIS FOR SLIDE UP */
+	bottom: -85%;
+	height: 100%;
+	left: 0%;
+	position: absolute;
+	transition: bottom 0.5s ease;
 	width: 100%;
+
+}
+
+.box__portfolio:hover .portfolio__textbox
+{
+  bottom: -60%;
+}
+
+.portfolio__textbox-row {
+	display: flex;
+	justify-content: space-between;
 }
 
 .portfolio__textbox h1, .portfolio__textbox a {
 	color: var(--white-color);
 }
 
-.box__portfolio {
-	background-size: cover;
-	background-position: center top; 
-}
 
 .box--solitaire {
 	background-image: url('../img/solitaire-screenshot.png');
@@ -124,6 +149,10 @@ div.slide {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+
+.contact__row {
+
 }
 
 .contact__box {
@@ -189,10 +218,10 @@ div.slide {
 	}
 } */
 
+/* HACK FOR CONTACT SIZING ON SMALL SCREEN */
 @media only screen and (max-width: 569px) {
 	.contact__box {
 		display: grid;
-
 		width: 87%;
 		height: 20%;
 		margin: 10px

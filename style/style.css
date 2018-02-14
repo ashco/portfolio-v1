@@ -11,7 +11,8 @@
   --main-font: 'Roboto', sans-serif;
 }
 
-/* MAIN & NAV */
+/* ========================= MAIN ========================= */
+
 .container1 {
 	display: grid;
 	position: absolute;
@@ -24,6 +25,13 @@
   grid-template-areas: 
     "navbar main-content";
 }
+
+.main {
+	grid-area: main-content;
+	overflow: auto;
+}
+
+/* ========================= NAV ========================= */
 
 .navbar {
 	display: flex;
@@ -44,16 +52,9 @@ li {
 	margin: 1.5em 0 1.5em 0;
 }
 
-.main {
-	grid-area: main-content;
-	overflow: auto;
-}
 
-.main__header {
-	text-align: center;
-}
+/* ========================= SECTIONS ========================= */
 
-/* SECTION FORMATTING */
 section.home {
 	color: var(--white-color);
 }
@@ -70,15 +71,29 @@ section.contact {
 	color: var(--orangered-color);
 }
 
-/* CONTENT BOXES */
 
-div.slide {
+
+
+
+/* ========================= MAIN ========================= */
+
+.resume__box {
+	background-color: var(--orangered-color);
+	color: var(--white-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 120px;
+	width: 120px;
+	margin: 30px;
 }
 
-/* PORTFOLIO */
+
+
+/* ========================= ABOUT ========================= */
+
+
+/* ========================= PORTFOLIO ========================= */
 .box__portfolio {
 	display: flex;
 	align-items: flex-end;
@@ -113,6 +128,12 @@ div.slide {
 
 }
 
+div.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .box__portfolio:hover .portfolio__textbox
 {
   bottom: -60%;
@@ -144,11 +165,11 @@ div.slide {
 	margin: 24px;
 }
 
-/* CONTACT */
+/* ========================= CONTACT ========================= */
 .contact__area {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	/* display: flex;
+	justify-content: center; */
+	/* flex-wrap: wrap; */
 }
 
 .contact__row {
@@ -161,8 +182,8 @@ div.slide {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 225px;
-	width: 225px;
+	width: 75%;
+	padding-top: 30%;
 	margin: 30px;
 }
 
@@ -170,11 +191,8 @@ div.slide {
 	background-color: var(--textbox-color);
 }
 
-/* .contact_box:hover {
-	background-color: blue;
-} */
 
-/* MOBILE */
+/* ========================= MOBILE ========================= */
 @media only screen and (max-width: 960px) {
 	.container1 {
 		grid-template-columns: auto;
@@ -219,7 +237,7 @@ div.slide {
 } */
 
 /* HACK FOR CONTACT SIZING ON SMALL SCREEN */
-@media only screen and (max-width: 569px) {
+/* @media only screen and (max-width: 569px) {
 	.contact__box {
 		display: grid;
 		width: 87%;
@@ -230,4 +248,4 @@ div.slide {
 	.contact__box > i {
 		margin: 8px;
 	}
-}
+} */

@@ -72,25 +72,20 @@ li {
 
 /* ========================= MAIN ========================= */
 
-.resume__box {
+
+.contact__box--slider {
 	background-color: var(--orangered-color);
 	color: var(--white-color);
 	position: absolute;
-	top: 5%;
-	right: 3%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 120px;
-	width: 120px;
-	margin: 30px;
 	/* NEED THIS FOR SLIDE UP */
 	overflow: hidden;
 }
 
-.resume__textbox{
+.contact__textbox--slider {
 	background-color: var(--textbox-color);
-	/* display: flex; */
 	text-align: center;
 	/* NEED THIS FOR SLIDE UP */
 	bottom: -100%;
@@ -101,14 +96,21 @@ li {
 	width: 100%;
 }
 
-.resume__textbox > p {
-    font-size: 22px;
-    margin-top: 12px;
+.contact__box--slider:hover .contact__textbox--slider {
+  bottom: -50%;
 }
 
-/* NEED THIS FOR SLIDE UP */
-.resume__box:hover .resume__textbox {
-  bottom: -50%;
+.resume__box {
+	top: 5%;
+	right: 3%;
+	height: 120px;
+	width: 120px;
+	margin: 30px; 
+}
+
+.resume__textbox > p {
+	font-size: 22px;
+    margin-top: 12px;
 }
 
 /* ========================= ABOUT ========================= */
@@ -122,8 +124,6 @@ li {
 	margin: 100px 100px 100px 100px;
 	background-size: cover;
 	background-position: center top; 
-	
-	
 	/* NEED THIS FOR SLIDE UP */
 	overflow: hidden;
 	position: relative;
@@ -135,10 +135,6 @@ li {
 	background-color: var(--textbox-color);
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between;
-	align-items: flex-start; */
-	/* width: 100%; */
-	
 	/* NEED THIS FOR SLIDE UP */
 	bottom: -85%;
 	height: 100%;
@@ -146,13 +142,11 @@ li {
 	position: absolute;
 	transition: bottom 0.5s ease;
 	width: 100%;
-
 }
 
 /* NEED THIS FOR SLIDE UP */
-.box__portfolio:hover .portfolio__textbox
-{
-  bottom: -60%;
+.box__portfolio:hover .portfolio__textbox {
+	bottom: -60%;
 }
 
 div.slide {
@@ -190,31 +184,21 @@ div.slide {
 
 /* ========================= CONTACT ========================= */
 
-.contact__area {
-	/* display: flex;
-	justify-content: center; */
-	/* flex-wrap: wrap; */
-}
-
-.contact__row {
-
-}
-
 .contact__box {
 	background-color: var(--orangered-color);
 	color: var(--white-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 75%;
-	padding: 10% 0;
+	width: 17%;
+	padding: 3% 0;
 	margin: 30px;
 }
 
-.contact__textbox {
-	background-color: var(--textbox-color);
+.contact__textbox > p {
+	font-size: 22px;
+    margin-top: 12px;
 }
-
 
 /* ========================= MOBILE ========================= */
 @media only screen and (max-width: 960px) {

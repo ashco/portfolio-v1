@@ -40,7 +40,7 @@ section.about {
 }
 
 section.portfolio {
-	color: var(--green-color)
+	color: var(--white-color)
 }
 
 section.contact {
@@ -133,11 +133,58 @@ li {
 
 .about__main {
 	grid-area: main;
+	display: flex;
+
+}
+
+.about__content-box--1 {
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	height: 95%;
+	width: 65%;
+	margin: 0 36px 0 64px;
+}
+
+.about__content-box--2 {
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	height: 95%;
+	width: 20%;
+	margin: 0 36px;
 }
 
 .about__footer {
 	grid-area: footer;
 }
+
+.about__content-box--3 {
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	height: 100%;
+	width: 65%;
+	margin: 0 36px 0 64px;
+}
+
+.about__title {
+	font-size: 24px;
+	margin-left: 24px;
+	font-weigth: 600;
+}
+
+.about__title--skills {
+	padding-top: 20px;
+}
+
+/* .about__content-box--4 {
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	height: 100%;
+	width: 20%;
+	margin: 0 36px;
+} */
+
+
+
 
 
 /* ========================= PORTFOLIO ========================= */
@@ -170,9 +217,8 @@ li {
 
 /* NEED THIS FOR SLIDE UP */
 .box__portfolio:hover .portfolio__textbox {
-	bottom: -70%;
+	bottom: -60%;
 }
-
 
 .portfolio__textbox-row {
 	display: flex;
@@ -182,7 +228,6 @@ li {
 .portfolio__textbox h1, .portfolio__textbox a {
 	color: var(--white-color);
 }
-
 
 .box--solitaire {
 	background-image: url('../img/solitaire-screenshot.png');
@@ -196,8 +241,28 @@ li {
 	background-image: url('../img/dreamstate-screenshot.png');
 }
 
-.portfolio__textbox > h1, .portfolio__textbox--links {
-	margin: 24px;
+.portfolio__textbox-row > h1 {
+	margin: 30px;
+}
+
+.portfolio__textbox--links {
+	margin-top: 30px;
+}
+
+.portfolio__textbox--links > a {
+	margin: 30px 30px 30px 0;
+}
+
+.portfolio__textbox--description {
+	/* background: #eee; */
+	width: 65%;
+	margin: 0 0 30px 30px;
+}
+
+.portfolio__textbox--tech {
+	/* background: #ddd; */
+	width: 35%;
+	margin: 0 30px 30px 0;
 }
 
 /* ========================= CONTACT ========================= */
@@ -212,7 +277,6 @@ li {
 
 .contact__header {
 	grid-area: header;
-
 }
 
 .contact__main {
@@ -222,7 +286,6 @@ li {
 	justify-content: space-between;
 
 }
-
 
 .contact__box {
 	width: 17%;
@@ -275,39 +338,13 @@ li {
 		align-self: center;
 	}
 
-
 	/* ========================= CONTACT ========================= */
 
-	/* .contact__container {
-		display: grid;
-		grid-template-rows: 1fr, 2fr, 2fr, 1fr, 1fr;
-		grid-template-areas: 
-		"header"
-		/* "linkedin"
-		"github"
-		"email"
-		/* "resume"; */ 
-/* 
-	.contact__link--linkedin {
-		grid-area: linkedin;
-	}
-
-	.contact__link--github {
-		grid-area: github;
-	}
-	
-	.contact__link--email {
-		grid-area: email;
-	}
-	
-	.contact__link--resume {
-		grid-area: resume;
-	} */
 	.contact__container {
 		grid-template-rows: 1fr 8fr;
 	}
 
-	.contact__header {
+	.contact__header > h1 {
 		font-size: 36px;
 	}
 

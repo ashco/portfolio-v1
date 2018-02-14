@@ -84,8 +84,32 @@ li {
 	height: 120px;
 	width: 120px;
 	margin: 30px;
+	/* NEED THIS FOR SLIDE UP */
+	overflow: hidden;
 }
 
+.resume__textbox{
+	background-color: var(--textbox-color);
+	/* display: flex; */
+	text-align: center;
+	/* NEED THIS FOR SLIDE UP */
+	bottom: -100%;
+	height: 100%;
+	left: 0%;
+	position: absolute;
+	transition: bottom 0.5s ease;
+	width: 100%;
+}
+
+.resume__textbox > p {
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+/* NEED THIS FOR SLIDE UP */
+.resume__box:hover .resume__textbox {
+  bottom: -50%;
+}
 
 /* ========================= ABOUT ========================= */
 
@@ -125,16 +149,18 @@ li {
 
 }
 
+/* NEED THIS FOR SLIDE UP */
+.box__portfolio:hover .portfolio__textbox
+{
+  bottom: -60%;
+}
+
 div.slide {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.box__portfolio:hover .portfolio__textbox
-{
-  bottom: -60%;
-}
 
 .portfolio__textbox-row {
 	display: flex;

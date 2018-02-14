@@ -15,14 +15,14 @@ $(document).ready(function() {
 	});
 
 
-	var waypoints = $('portfolio__textbox').waypoint({
-		handler: function(){
-			console.log('trigger')
-		},
-			offset: '5%'
+	// var waypoints = $('portfolio__textbox').waypoint({
+	// 	handler: function(){
+	// 		console.log('trigger')
+	// 	},
+	// 		offset: '5%'
 		
 
-	  });
+	//   });
 
 
 

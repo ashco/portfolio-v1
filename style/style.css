@@ -1,18 +1,17 @@
 /*GLOBAL VARIABLES - COLORS*/
 :root {
-  --white-color: #FDFFFE; 
-  --grey-color: #252627;
-  /* --grey-color: #b8bec5; */
+	--white-color: #FDFFFE; 
+	--grey-color: #252627;
 	--dark-grey-color: #181818;
 	--textbox-color: rgba(24, 24, 24, .75);
-  --blue-color: #1B9CE2;
-  --orangered-color: orangered;
-  --green-color: rgb(52, 190, 144);
-  --header-font: 'Poppins', sans-serif;
-  --main-font: 'Roboto', sans-serif;
+	--blue-color: #1B9CE2;
+	--orangered-color: orangered;
+	--green-color: rgb(52, 190, 144);
+	--header-font: 'Poppins', sans-serif;
+	--main-font: 'Roboto', sans-serif;
 }
 
-/* ========================= SECTIONS ========================= */
+/* ========================= ALL SECTIONS ========================= */
 
 .container1 {
 	display: grid;
@@ -46,6 +45,10 @@ section.portfolio {
 
 section.contact {
 	color: var(--orangered-color);
+}
+
+.header {
+	margin-left: 64px;
 }
 
 /* ========================= NAV ========================= */
@@ -115,6 +118,27 @@ li {
 
 /* ========================= ABOUT ========================= */
 
+.about__container {
+	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.about__header {
+	grid-area: header;
+}
+
+.about__main {
+	grid-area: main;
+}
+
+.about__footer {
+	grid-area: footer;
+}
+
 
 /* ========================= PORTFOLIO ========================= */
 .box__portfolio {
@@ -146,13 +170,7 @@ li {
 
 /* NEED THIS FOR SLIDE UP */
 .box__portfolio:hover .portfolio__textbox {
-	bottom: -60%;
-}
-
-div.slide {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	bottom: -70%;
 }
 
 
@@ -184,12 +202,33 @@ div.slide {
 
 /* ========================= CONTACT ========================= */
 
-.contact__box {
-	background-color: var(--orangered-color);
-	color: var(--white-color);
+.contact__container {
+	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.contact__header {
+	grid-area: header;
+
+}
+
+.contact__main {
+	grid-area: main;
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+
+}
+
+.contact__footer {
+	grid-area: footer;
+}
+
+.contact__box {
 	width: 17%;
 	padding: 3% 0;
 	margin: 30px;
@@ -211,8 +250,9 @@ div.slide {
 			"main-content";
 	}
 
-	.main__header {
+	.header {
 		text-align: center;
+		margin: 0;
 	}
 
 	/* ========================= NAV ========================= */
@@ -242,9 +282,32 @@ div.slide {
 
 	/* ========================= CONTACT ========================= */
 
+	.contact__container {
+		display: grid;
+		grid-template-rows: 1fr, 2fr, 2fr, 1fr, 1fr;
+		grid-template-areas: 
+		"header"
+		"linkedin"
+		"github"
+		"email"
+		"resume";
+	}
 
+	.contact__link--linkedin {
+		grid-area: linkedin;
+	}
 
-
+	.contact__link--github {
+		grid-area: github;
+	}
+	
+	.contact__link--email {
+		grid-area: email;
+	}
+	
+	.contact__link--resume {
+		grid-area: resume;
+	}
 
 
 

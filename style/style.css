@@ -2,6 +2,7 @@
 :root {
   --white-color: #FDFFFE; 
   --grey-color: #252627;
+  /* --grey-color: #b8bec5; */
 	--dark-grey-color: #181818;
 	--textbox-color: rgba(24, 24, 24, .75);
   --blue-color: #1B9CE2;
@@ -11,7 +12,7 @@
   --main-font: 'Roboto', sans-serif;
 }
 
-/* ========================= MAIN ========================= */
+/* ========================= SECTIONS ========================= */
 
 .container1 {
 	display: grid;
@@ -22,13 +23,29 @@
 	background-color: var(--grey-color);
 	grid-template-columns: 60px auto;
 	grid-template-rows: auto;
-  grid-template-areas: 
+	grid-template-areas: 
     "navbar main-content";
 }
 
 .main {
 	grid-area: main-content;
 	overflow: auto;
+}
+
+section.home {
+	color: var(--white-color);
+}
+
+section.about {
+	color: var(--blue-color)
+}
+
+section.portfolio {
+	color: var(--green-color)
+}
+
+section.contact {
+	color: var(--orangered-color);
 }
 
 /* ========================= NAV ========================= */
@@ -53,33 +70,14 @@ li {
 }
 
 
-/* ========================= SECTIONS ========================= */
-
-section.home {
-	color: var(--white-color);
-}
-
-section.about {
-	color: var(--blue-color)
-}
-
-section.portfolio {
-	color: var(--green-color)
-}
-
-section.contact {
-	color: var(--orangered-color);
-}
-
-
-
-
-
 /* ========================= MAIN ========================= */
 
 .resume__box {
 	background-color: var(--orangered-color);
 	color: var(--white-color);
+	position: absolute;
+	top: 5%;
+	right: 3%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,7 +85,6 @@ section.contact {
 	width: 120px;
 	margin: 30px;
 }
-
 
 
 /* ========================= ABOUT ========================= */
@@ -166,6 +163,7 @@ div.slide {
 }
 
 /* ========================= CONTACT ========================= */
+
 .contact__area {
 	/* display: flex;
 	justify-content: center; */
@@ -183,7 +181,7 @@ div.slide {
 	justify-content: center;
 	align-items: center;
 	width: 75%;
-	padding-top: 30%;
+	padding: 10% 0;
 	margin: 30px;
 }
 
@@ -194,6 +192,7 @@ div.slide {
 
 /* ========================= MOBILE ========================= */
 @media only screen and (max-width: 960px) {
+	/* ========================= SECTIONS ========================= */
 	.container1 {
 		grid-template-columns: auto;
 		grid-template-rows: 60px auto;
@@ -202,6 +201,11 @@ div.slide {
 			"main-content";
 	}
 
+	.main__header {
+		text-align: center;
+	}
+
+	/* ========================= NAV ========================= */
 	ul.navbar__linkbox {
 		display: flex;
 		flex-direction: row;
@@ -212,40 +216,27 @@ div.slide {
 		margin: 0 1.5em 0 1.5em;
 	}
 	
+	/* ========================= MAIN ========================= */
+	/* ========================= ABOUT ========================= */
+	/* ========================= PORTFOLIO ========================= */
+	
 	div.slide {
 		align-items: flex-start;
 	}
 
-	/* PORTFOLIO */
 	.box__portfolio {
 		margin: 0;
 		align-self: center;
 	}
 
-	/* CONTACT */
-	
+
+	/* ========================= CONTACT ========================= */
+
+
+
+
+
+
 
 
 }
-
-/* MOBILE FORMATTING */
-/* @media only screen and (max-width: 455px) {
-	.contact__box {
-		background-color: #3F51B5;
-		color: #5c3a3a
-	}
-} */
-
-/* HACK FOR CONTACT SIZING ON SMALL SCREEN */
-/* @media only screen and (max-width: 569px) {
-	.contact__box {
-		display: grid;
-		width: 87%;
-		height: 20%;
-		margin: 10px
-	}
-
-	.contact__box > i {
-		margin: 8px;
-	}
-} */

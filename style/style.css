@@ -204,11 +204,10 @@ li {
 
 .contact__container {
 	display: grid;
-	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-rows: 1fr 5fr;
 	grid-template-areas: 
     "header"
-    "main"
-    "footer";
+    "main";
 }
 
 .contact__header {
@@ -218,15 +217,12 @@ li {
 
 .contact__main {
 	grid-area: main;
-	width: 100%;
+	width: 77%;
 	display: flex;
 	justify-content: space-between;
 
 }
 
-.contact__footer {
-	grid-area: footer;
-}
 
 .contact__box {
 	width: 17%;
@@ -282,17 +278,16 @@ li {
 
 	/* ========================= CONTACT ========================= */
 
-	.contact__container {
+	/* .contact__container {
 		display: grid;
 		grid-template-rows: 1fr, 2fr, 2fr, 1fr, 1fr;
 		grid-template-areas: 
 		"header"
-		"linkedin"
+		/* "linkedin"
 		"github"
 		"email"
-		"resume";
-	}
-
+		/* "resume"; */ 
+/* 
 	.contact__link--linkedin {
 		grid-area: linkedin;
 	}
@@ -307,9 +302,29 @@ li {
 	
 	.contact__link--resume {
 		grid-area: resume;
+	} */
+	.contact__container {
+		grid-template-rows: 1fr 8fr;
 	}
 
+	.contact__header {
+		font-size: 36px;
+	}
 
+	.contact__main {
+		grid-area: main;
+		width: 90%;
+		height: 55%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		/* align-items: center; */
+	}
 
-
+	.contact__box {
+		width: 90%;
+		height: 15%;
+		padding: 0;
+		margin: 1px;
+	}
 }

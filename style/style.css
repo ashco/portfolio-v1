@@ -48,7 +48,7 @@ section.contact {
 }
 
 .header {
-	margin-left: 64px;
+	margin-left: 96px;
 }
 
 /* ========================= NAV ========================= */
@@ -134,33 +134,43 @@ li {
 .about__main {
 	grid-area: main;
 	display: flex;
+	justify-content: space-between;
 }
 
 .about__content-box--1 {
 	background-color: var(--blue-color);
 	color: var(--white-color);
 	height: 95%;
-	width: 65%;
-	margin: 0 36px 0 64px;
+	width: 40%;
+	margin: 0 32px 0 64px;
 }
 
 .about__content-box--2 {
 	background-color: var(--blue-color);
 	color: var(--white-color);
 	height: 95%;
+	width: 35%;
+	/* margin: 0; */
+}
+
+
+.about__content-box--3 {
+	background-color: var(--blue-color);
+	color: var(--white-color);
+	height: 95%;
 	width: 20%;
-	margin: 0 36px;
+	margin: 0 64px 0 32px;
 }
 
 .about__footer {
 	grid-area: footer;
 }
 
-.about__content-box--3 {
+.about__content-box--4 {
 	background-color: var(--blue-color);
 	color: var(--white-color);
 	height: 100%;
-	width: 65%;
+	width: 60%;
 	margin: 0 36px 0 64px;
 }
 
@@ -341,7 +351,35 @@ ul.about__text--random {
 	}
 	
 	/* ========================= MAIN ========================= */
+
+	.resume__box {
+		height: 80px;
+		width: 80px;
+	}
+
 	/* ========================= ABOUT ========================= */
+
+	.about__main {
+		flex-direction: column;
+	}
+
+	.about__content-box--1 {
+		background-color: var(--blue-color);
+		color: var(--white-color);
+		height: 40%;
+		width: 90%;
+		margin: 0 64px;
+	}
+	
+	.about__content-box--2 {
+		background-color: var(--blue-color);
+		color: var(--white-color);
+		height: 40%;
+		width: 90%;
+		margin: 0 64px;
+		/* margin: 0; */
+	}
+
 	/* ========================= PORTFOLIO ========================= */
 	
 	div.slide {
@@ -359,8 +397,12 @@ ul.about__text--random {
 		grid-template-rows: 1fr 8fr;
 	}
 
-	.contact__header > h1 {
+	.header > h1 {
 		font-size: 36px;
+	}
+
+	.header > h3 {
+		font-size: 24px;
 	}
 
 	.contact__main {

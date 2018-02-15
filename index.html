@@ -34,7 +34,9 @@
 					<h1>Ashton Christie</h1>
 					<h3 class="main__header--subheader">Full-Stack Web Developer</h3>
 				</div>
-				<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank">
+				
+				<!-- DESKTOP + TABLET -->
+				<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank" class="hide-on-small-only">
 					<div class="resume__box contact__box--slider z-depth-3">
 						<i class="fas fa-file-alt fa-6x"></i>
 						<div class="resume__textbox contact__textbox--slider">
@@ -42,6 +44,21 @@
 						</div>
 					</div>
 				</a>
+
+				<!-- MOBILE -->
+				<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank" class="hide-on-med-and-up">
+					<div class="resume__box contact__box--slider z-depth-3">
+						<i class="fas fa-file-alt fa-3x resume__icon--alt"></i>
+						<div class="resume__textbox contact__textbox--slider">
+							<p>Resume</p>
+						</div>
+					</div>
+				</a>
+
+				<div class="down-nav">
+					<a href="#about"><i class="fas fa-sort-down fa-5x animate bounce"></i></a> 
+				</div>
+
 			</section>
 
 			<!-- ABOUT -->
@@ -74,11 +91,13 @@
 							</ul>
 						</div>
 					</div>
-					<div class="about__footer hide-on-med-and-down">
+					<div class="about__footer hide-on-small-only">
 						<div class="about__content-box--4">
 							<p class="about__title about__title--skills">Skills</p>
 						</div>
-						<!-- <div class="about__content-box--4">Content4</div> -->
+					</div>
+					<div class="down-nav">
+						<a href="#portfolio"><i class="fas fa-sort-down fa-5x animate bounce"></i></a> 
 					</div>
 				</div>
 			</section>
@@ -86,7 +105,7 @@
 
 			<!-- PORTFOLIO -->
 			<section class="portfolio section">
-				<div>
+				<div class="portfolio__window">
 					<div class="slide">
 						<div class="box__portfolio box--solitaire z-depth-3">
 							<div class="portfolio__textbox">
@@ -177,6 +196,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="down-nav">
+					<a href="#contact"><i class="fas fa-sort-down fa-5x animate bounce"></i></a> 
+				</div>
 			</section>
 
 			<!-- CONTACT -->
@@ -185,48 +207,78 @@
 					<div class="header contact__header">
 						<h1>Contact</h1>
 					</div>
-					<div class="contact__main"> 
-						<!-- <div class="this"> -->
-							<a href="https://www.linkedin.com/in/ashtonchristie/" target="_blank">
-								<div class="contact__link--linkedin contact__box contact__box--slider z-depth-3">
-									<i class="fab fa-linkedin fa-10x"></i>
-									<div class="contact__textbox contact__textbox--slider">
-										<p>LinkedIn</p>
-									</div>
+					<!-- DESKTOP + TABLET -->
+					<div class="contact__main hide-on-small-only"> 
+						<a href="https://www.linkedin.com/in/ashtonchristie/" target="_blank">
+							<div class="contact__link--linkedin contact__box contact__box--slider z-depth-3">
+								<i class="fab fa-linkedin fa-10x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>LinkedIn</p>
 								</div>
-							</a>
-						<!-- </div>			 -->
-						<!-- <div class="this"> -->
-							<a href="https://github.com/ashco" target="_blank">
-								<div class="contact__link--github contact__box contact__box--slider z-depth-3">
-									<i class="fab fa-github fa-10x"></i>
-									<div class="contact__textbox contact__textbox--slider">
-										<p>Github</p>
-									</div>
-								</div> 
-							</a>
-						<!-- </div> -->
-						<!-- <div class="this"> -->
-							<a href="mailto:ashchristie@outlook.com" target="_blank">
-								<div class="contact__link--email contact__box contact__box--slider z-depth-3">
-									<i class="fas fa-envelope fa-10x"></i>	
-									<div class="contact__textbox contact__textbox--slider">
-										<p>Email</p>
-									</div>
+							</div>
+						</a>
+						<a href="https://github.com/ashco" target="_blank">
+							<div class="contact__link--github contact__box contact__box--slider z-depth-3">
+								<i class="fab fa-github fa-10x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Github</p>
 								</div>
-							</a>
-						<!-- </div> -->
-						<di÷v class="this">
-							<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank">
-								<div class="contact__link--resume contact__box contact__box--slider z-depth-3">
-									<i class="fas fa-file-alt fa-10x"></i>
-									<div class="contact__textbox contact__textbox--slider">
-										<p>Resume</p>
-									</div>
+							</div> 
+						</a>
+						<a href="mailto:ashchristie@outlook.com" target="_blank">
+							<div class="contact__link--email contact__box contact__box--slider z-depth-3">
+								<i class="fas fa-envelope fa-10x"></i>	
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Email</p>
 								</div>
-							</a>
-						</div÷>
+							</div>
+						</a>
+						<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank">
+							<div class="contact__link--resume contact__box contact__box--slider z-depth-3">
+								<i class="fas fa-file-alt fa-10x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Resume</p>
+								</div>
+							</div>
+						</a>
 					</div>
+					
+					<!-- MOBILE -->
+					<div class="contact__main--mobile hide-on-med-and-up"> 
+						<a href="https://www.linkedin.com/in/ashtonchristie/" target="_blank">
+							<div class="contact__link--linkedin contact__box contact__box--slider z-depth-3">
+								<i class="fab fa-linkedin fa-5x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>LinkedIn</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://github.com/ashco" target="_blank">
+							<div class="contact__link--github contact__box contact__box--slider z-depth-3">
+								<i class="fab fa-github fa-5x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Github</p>
+								</div>
+							</div> 
+						</a>
+						<a href="mailto:ashchristie@outlook.com" target="_blank">
+							<div class="contact__link--email contact__box contact__box--slider z-depth-3">
+								<i class="fas fa-envelope fa-5x"></i>	
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Email</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://drive.google.com/file/d/1cVGPjkuakbGbzjTCyvP0Nt9I02NYxAjy/view?usp=sharing" target="_blank">
+							<div class="contact__link--resume contact__box contact__box--slider z-depth-3">
+								<i class="fas fa-file-alt fa-5x"></i>
+								<div class="contact__textbox contact__textbox--slider">
+									<p>Resume</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					
 				</div>
 			</section>
 		</div>

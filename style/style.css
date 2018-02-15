@@ -1,11 +1,13 @@
 /*GLOBAL VARIABLES - COLORS*/
 :root {
 	--white-color: #FDFFFE; 
-	--grey-color: #252627;
+	/* --grey-color: #252627; */
+	--grey-color: #162427;
 	--dark-grey-color: #181818;
 	--textbox-color: rgba(24, 24, 24, .75);
 	--blue-color: #1B9CE2;
-	--orangered-color: orangered;
+	/* --orangered-color: orangered; */
+	--orangered-color: #e05b3a;
 	--green-color: rgb(52, 190, 144);
 	--header-font: 'Poppins', sans-serif;
 	--main-font: 'Roboto', sans-serif;
@@ -72,9 +74,25 @@ li {
 	margin: 1.5em 0 1.5em 0;
 }
 
+.down-nav {
+	position: absolute;
+	bottom: 25px;
+	left: 48%;
+}
+
+.down-nav > a {
+	color: var(--white-color);
+}
 
 /* ========================= MAIN ========================= */
 
+.home {
+	/* background-image: url('../img/red-fireworks.jpg'); */
+	background-image: url('../img/city-dark.jpg');
+	background-size: cover;
+	background-position: center top; 
+
+}
 
 .contact__box--slider {
 	background-color: var(--orangered-color);
@@ -150,9 +168,7 @@ li {
 	color: var(--white-color);
 	height: 95%;
 	width: 35%;
-	/* margin: 0; */
 }
-
 
 .about__content-box--3 {
 	background-color: var(--blue-color);
@@ -177,7 +193,7 @@ li {
 .about__title {
 	font-size: 24px;
 	margin-left: 24px;
-	font-weigth: 600;
+	font-weight: 600;
 }
 
 .about__title--skills {
@@ -323,8 +339,8 @@ ul.about__text--random {
     margin-top: 14%;
 }
 
-/* ========================= MOBILE ========================= */
-@media only screen and (max-width: 960px) {
+/* ========================= TABLET ========================= */
+@media only screen and (max-width: 992px) {
 	/* ========================= SECTIONS ========================= */
 	.container1 {
 		grid-template-columns: auto;
@@ -339,6 +355,8 @@ ul.about__text--random {
 		margin: 0;
 	}
 
+
+
 	/* ========================= NAV ========================= */
 	ul.navbar__linkbox {
 		display: flex;
@@ -350,12 +368,12 @@ ul.about__text--random {
 		margin: 0 1.5em 0 1.5em;
 	}
 	
+	.down-nav {
+		bottom: 65px;
+	}
+
 	/* ========================= MAIN ========================= */
 
-	.resume__box {
-		height: 80px;
-		width: 80px;
-	}
 
 	/* ========================= ABOUT ========================= */
 
@@ -364,20 +382,28 @@ ul.about__text--random {
 	}
 
 	.about__content-box--1 {
-		background-color: var(--blue-color);
-		color: var(--white-color);
-		height: 40%;
+		/* background-color: var(--blue-color); */
+		/* color: var(--white-color); */
+		height: 50%;
 		width: 90%;
 		margin: 0 64px;
 	}
 	
 	.about__content-box--2 {
-		background-color: var(--blue-color);
-		color: var(--white-color);
+		/* background-color: var(--blue-color); */
+		/* color: var(--white-color); */
 		height: 40%;
 		width: 90%;
 		margin: 0 64px;
 		/* margin: 0; */
+	}
+
+	.about__content-box--4 {
+		/* background-color: var(--blue-color); */
+		/* color: var(--white-color); */
+		height: 80%;
+		width: 60%;
+		margin: 0 36px 0 64px;
 	}
 
 	/* ========================= PORTFOLIO ========================= */
@@ -391,18 +417,16 @@ ul.about__text--random {
 		align-self: center;
 	}
 
+	.box__portfolio{
+		margin-bottom: 120px;
+	}
+	/* .fp-tableCell { */
+		/* display: table-cell; */
+
 	/* ========================= CONTACT ========================= */
 
 	.contact__container {
 		grid-template-rows: 1fr 8fr;
-	}
-
-	.header > h1 {
-		font-size: 36px;
-	}
-
-	.header > h3 {
-		font-size: 24px;
 	}
 
 	.contact__main {
@@ -422,3 +446,93 @@ ul.about__text--random {
 		margin: 1px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= MOBILE ========================= */
+@media only screen and (max-width: 600px) {
+	/* ========================= SECTIONS ========================= */
+
+
+	.header > h1 {
+		font-size: 36px;
+	}
+
+	.header > h3 {
+		font-size: 24px;
+	}
+	
+	/* ========================= NAV ========================= */
+	
+	
+	
+	
+	
+	/* ========================= MAIN ========================= */
+	.resume__box {
+		/* top: 5%; */
+		right: 3%;
+		height: 90px;
+		width: 90%;
+		margin: 30px auto; 
+	}
+
+	.resume__textbox > p {
+		font-size: 22px;
+		margin-top: 12px;
+		margin: 30px 0;
+	}
+
+	.resume__icon--alt {
+		position: relative;
+		left: 0;
+	}
+
+
+
+
+	/* ========================= ABOUT ========================= */
+
+
+	/* ========================= PORTFOLIO ========================= */
+
+	/* ========================= CONTACT ========================= */
+
+
+	.contact__box--slider {
+
+
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* NEED THIS FOR SLIDE UP */
+		overflow: visible;
+	}
+	
+	.contact__textbox--slider {
+
+		text-align: center;
+		/* NEED THIS FOR SLIDE UP */
+		bottom: 0;
+		height: 100%;
+		left: 20%;
+		position: absolute;
+		transition: none;
+		width: 80%;
+	}
+	
+	.contact__box--slider:hover .contact__textbox--slider {
+	  bottom: 0;
+	}
+}
+
+

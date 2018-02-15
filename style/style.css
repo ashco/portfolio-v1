@@ -78,6 +78,7 @@ li {
 	position: absolute;
 	bottom: 25px;
 	left: 48%;
+	z-index: 1;
 }
 
 .down-nav > a {
@@ -310,10 +311,11 @@ ul.about__text--random {
 
 .contact__container {
 	display: grid;
-	grid-template-rows: 1fr 5fr;
+	grid-template-rows: 1fr 2fr 3fr;
 	grid-template-areas: 
     "header"
-    "main";
+	"main"
+	"footer";
 }
 
 .contact__header {
@@ -325,8 +327,8 @@ ul.about__text--random {
 	width: 77%;
 	display: flex;
 	justify-content: space-between;
-
 }
+
 
 .contact__box {
 	width: 17%;
@@ -338,6 +340,32 @@ ul.about__text--random {
 	font-size: 28px;
     margin-top: 14%;
 }
+
+.contact__footer {
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+}
+
+.contact__dialog-box {
+	background-color: var(--orangered-color);
+	color: var(--white-color);
+	width: 60%;
+	height: 160px;
+	margin-top: 80px;
+}
+
+.contact__dialog-box > p {
+	font-size: 18px;
+	margin: 24px;
+}
+
+
+
+
+
+
+
 
 /* ========================= TABLET ========================= */
 @media only screen and (max-width: 992px) {
@@ -432,8 +460,7 @@ ul.about__text--random {
 	.box__portfolio{
 		margin-bottom: 120px;
 	}
-	/* .fp-tableCell { */
-		/* display: table-cell; */
+
 
 	/* ========================= CONTACT ========================= */
 
@@ -460,6 +487,7 @@ ul.about__text--random {
 		margin: 1px;
 	}
 }
+
 
 
 

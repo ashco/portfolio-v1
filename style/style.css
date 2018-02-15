@@ -90,9 +90,34 @@ li {
 .home {
 	/* background-image: url('../img/red-fireworks.jpg'); */
 	background-image: url('../img/city-dark.jpg');
+	
 	background-size: cover;
 	background-position: center top; 
 
+	/* -webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px); */
+}
+
+.home--background-img {
+	/* background-image: url('../img/city-dark.jpg');
+	background-size: cover;
+	background-position: center top; 
+
+	height: 100%;
+	width: 100%;
+
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px); */
+}
+
+.home__content {
+	
 }
 
 .contact__box--slider {

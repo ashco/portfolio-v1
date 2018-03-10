@@ -574,8 +574,8 @@ ul.about__text--random {
 	}
 
 	.resume__icon--alt {
-		position: relative;
-		left: 0;
+		position: absolute;
+		left: 6.5%;
 	}
 
 

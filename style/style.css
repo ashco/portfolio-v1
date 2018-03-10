@@ -87,32 +87,24 @@ li {
 
 /* ========================= MAIN ========================= */
 
-.home {
-	background-image: url('../img/city-dark.jpg');
-	background-size: cover;
-	background-position: center top; 
-
-	/* -webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	-o-filter: blur(3px);
-	-ms-filter: blur(3px);
-	filter: blur(3px); */
-}
-
-/* .home--background-img {
-	background-image: url('../img/city-dark.jpg');
-	background-size: cover;
-	background-position: center top; 
-
-	height: 100%;
+.home::before {
 	width: 100%;
+	height: 24%;
+	content: "";
+  	position: fixed;
+	z-index: -1;
+	  
+	background-image: url('../img/city-dark.jpg');
+	background-size: cover;
+	background-position: center top; 
 
 	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
 	-o-filter: blur(3px);
 	-ms-filter: blur(3px);
 	filter: blur(3px);
-} */
+}
+
 
 
 .contact__box--slider {
@@ -153,6 +145,18 @@ li {
 .resume__textbox > p {
 	font-size: 22px;
     margin-top: 12px;
+}
+
+.resume__textbox--slider {
+	background-color: var(--textbox-color);
+	text-align: center;
+	/* NEED THIS FOR SLIDE UP */
+	bottom: -50%;
+	height: 100%;
+	left: 0%;
+	position: absolute;
+	transition: bottom 0.5s ease;
+	width: 100%;
 }
 
 /* ========================= ABOUT ========================= */
@@ -392,9 +396,9 @@ ul.about__text--random {
 	/* ========================= SECTIONS ========================= */
 	.container1 {
 		grid-template-columns: auto;
-		grid-template-rows: 60px auto;
+		grid-template-rows: auto;
 		grid-template-areas: 
-			"navbar"
+			/* "navbar" */
 			"main-content";
 	}
 
@@ -406,19 +410,19 @@ ul.about__text--random {
 
 
 	/* ========================= NAV ========================= */
-	ul.navbar__linkbox {
+	/* ul.navbar__linkbox {
 		display: flex;
 		flex-direction: row;
-	}
+	} */
 
 	/* margins for nav buttons */
-	li {
+	/* li {
 		margin: 0 1.5em 0 1.5em;
 	}
 	
 	.down-nav {
 		bottom: 65px;
-	}
+	} */
 
 	/* ========================= MAIN ========================= */
 
@@ -593,7 +597,7 @@ ul.about__text--random {
 	}
 	
 	.contact__box--slider:hover .contact__textbox--slider {
-	  bottom: 0;
+	  	bottom: 0;
 	}
 }
 

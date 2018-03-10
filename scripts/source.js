@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	//Page navigation
 	$('.main').fullpage({
-		anchors:['home', 'about', 'portfolio', 'contact']
+		anchors:['home', 'portfolio', 'about', 'contact']
 	});
 
 	//Nav icon change

@@ -105,8 +105,6 @@ li {
 	filter: blur(3px);
 }
 
-
-
 .contact__box--slider {
 	background-color: var(--orangered-color);
 	color: var(--white-color);

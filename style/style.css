@@ -517,7 +517,6 @@ ul.about__text--random {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		/* align-items: center; */
 	}
 
 	.contact__box {
@@ -525,7 +524,7 @@ ul.about__text--random {
 		height: 15%;
 		padding: 0;
 		margin: 1px;
-	}
+	} 
 }
 
 
@@ -573,10 +572,12 @@ ul.about__text--random {
 		margin: 30px 0;
 	}
 
-	.resume__icon--alt {
+	.mobile__icon--alt {
 		position: absolute;
 		left: 6.5%;
 	}
+
+
 
 
 
@@ -590,20 +591,16 @@ ul.about__text--random {
 
 
 	.contact__box--slider {
-
-
 		position: absolute;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		/* NEED THIS FOR SLIDE UP */
 		overflow: visible;
 	}
 	
 	.contact__textbox--slider {
 
 		text-align: center;
-		/* NEED THIS FOR SLIDE UP */
 		bottom: 0;
 		height: 100%;
 		left: 20%;

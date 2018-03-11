@@ -104,7 +104,7 @@ li {
 	filter: blur(3px);
 }
 
-.contact__box--slider {
+.resume__box--slider {
 	background-color: var(--orangered-color);
 	color: var(--white-color);
 	position: absolute;
@@ -115,19 +115,7 @@ li {
 	overflow: hidden;
 }
 
-.contact__textbox--slider {
-	background-color: var(--textbox-color);
-	text-align: center;
-	/* NEED THIS FOR SLIDE UP */
-	bottom: -100%;
-	height: 100%;
-	left: 0%;
-	position: absolute;
-	transition: bottom 0.5s ease;
-	width: 100%;
-}
-
-.contact__box--slider:hover .contact__textbox--slider {
+.resume__box--slider:hover .resume__textbox--slider {
   bottom: -50%;
 }
 
@@ -367,7 +355,6 @@ ul.about__text--random {
 	justify-content: space-between;
 }
 
-
 .contact__box {
 	width: 17%;
 	padding: 3% 0;
@@ -398,8 +385,45 @@ ul.about__text--random {
 	margin: 24px;
 }
 
+.contact__main--mobile {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	text-align: center;
+}
 
+.contact-box__mobile--container {
+	margin-bottom: 175px;
+	margin-left: 5%;
+}
 
+.contact__box--slider {
+	background-color: var(--orangered-color);
+	color: var(--white-color);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* NEED THIS FOR SLIDE UP */
+	overflow: hidden;
+}
+
+.contact__box--slider:hover .contact__textbox--slider {
+	bottom: -50%;
+}
+  
+  
+.contact__textbox--slider {
+	background-color: var(--textbox-color);
+	text-align: center;
+	/* NEED THIS FOR SLIDE UP */
+	bottom: -1000%;
+	height: 100%;
+	left: 0%;
+	position: absolute;
+	transition: bottom 0.5s ease;
+	width: 100%;
+}
 
 
 
@@ -440,6 +464,19 @@ ul.about__text--random {
 
 	/* ========================= MAIN ========================= */
 
+	.contact__textbox--slider {
+		text-align: center;
+		bottom: 0;
+		height: 100%;
+		left: 20%;
+		position: absolute;
+		transition: none;
+		width: 80%;
+	}
+	
+	.contact__box--slider:hover .contact__textbox--slider {
+	  	bottom: 0;
+	}
 
 	/* ========================= PORTFOLIO ========================= */
 	
@@ -525,6 +562,36 @@ ul.about__text--random {
 		padding: 0;
 		margin: 1px;
 	} 
+
+
+
+	.contact__box--slider--about {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: visible;
+	}
+	
+	.contact__textbox--slider {
+
+		text-align: center;
+		bottom: 0;
+		height: 100%;
+		left: 23%;
+		position: absolute;
+		transition: none;
+		width: 77%;
+	}
+	
+	.contact__box--slider:hover .contact__textbox--slider {
+	  	bottom: 0;
+	}
+
+	.about__icon--alt {
+		position: absolute;
+		left: 6.5%;
+	}
 }
 
 
@@ -572,13 +639,20 @@ ul.about__text--random {
 		margin: 30px 0;
 	}
 
-	.mobile__icon--alt {
+	.resume__icon--alt {
 		position: absolute;
 		left: 6.5%;
 	}
 
-
-
+	.resume__textbox--slider {
+		text-align: center;
+		bottom: 0;
+		height: 100%;
+		left: 20%;
+		position: absolute;
+		transition: none;
+		width: 80%;
+	}
 
 
 
@@ -590,27 +664,9 @@ ul.about__text--random {
 	/* ========================= CONTACT ========================= */
 
 
-	.contact__box--slider {
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: visible;
-	}
-	
 	.contact__textbox--slider {
-
-		text-align: center;
-		bottom: 0;
-		height: 100%;
-		left: 20%;
-		position: absolute;
-		transition: none;
-		width: 80%;
-	}
-	
-	.contact__box--slider:hover .contact__textbox--slider {
-	  	bottom: 0;
+		left: 30%;
+		width: 70%;
 	}
 }
 

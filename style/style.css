@@ -152,7 +152,7 @@ li {
 	display: flex;
 	align-items: flex-end;
 	height: 85%;
-	margin: 100px 100px 100px 100px;
+	margin: 80px;
 	background-size: cover;
 	background-position: center top; 
 	/* NEED THIS FOR SLIDE UP */
@@ -190,6 +190,25 @@ li {
 .box--dreamstate {
 	background-image: url('../img/dreamstate-screenshot.png');
 }
+
+/* .portfolio__content-box--blur::before {
+	width: 90%;
+	height: 15%;
+	padding: 0;
+	margin: 1px;
+	margin-left: 5%;
+	
+	content: "";
+	position: fixed;
+	z-index: -1;
+	
+	background-image: url('../img/dreamstate-screenshot.png');
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+} */
 
 .box--solitaire {
 	background-image: url('../img/solitaire-screenshot.png');
@@ -497,29 +516,26 @@ ul.about__text--random {
 	.portfolio__content-box--mobile {
 		width: 90%;
 		height: 15%;
+		height: 200px;
 		padding: 0;
 		margin: 1px;
 		margin-left: 5%;
 		background-color: var(--grey-color);
 		background-size: cover;
 		background-position: center top; 
+		overflow: hidden;
+		margin-top: 20px;
 	}
 
-	/* .portfolio__content-box--mobile--dreamstate {
-		background-image: url('../img/dreamstate-screenshot.png');
+	.portfolio__textbox--mobile {
+		background-color: var(--textbox-color);
+		display: flex;
+		flex-direction: column;
+		bottom: -50%;
+		height: 100%;
+		position: relative;
 	}
 
-	.portfolio__content-box--mobile--solitaire {
-		background-image: url('../img/solitaire-screenshot.png');
-	}
-
-	.portfolio__content-box--mobile--recrypt {
-		background-image: url('../img/recrypt-screenshot.png');
-	} */
-
-	.portfolio__content-box--mobile--project4 {
-
-	}
 
 	/* ========================= ABOUT ========================= */
 

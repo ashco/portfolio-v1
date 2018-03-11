@@ -494,6 +494,32 @@ ul.about__text--random {
 	}
 
 
+	.portfolio__content-box--mobile {
+		width: 90%;
+		height: 15%;
+		padding: 0;
+		margin: 1px;
+		margin-left: 5%;
+		background-color: var(--grey-color);
+		background-size: cover;
+		background-position: center top; 
+	}
+
+	/* .portfolio__content-box--mobile--dreamstate {
+		background-image: url('../img/dreamstate-screenshot.png');
+	}
+
+	.portfolio__content-box--mobile--solitaire {
+		background-image: url('../img/solitaire-screenshot.png');
+	}
+
+	.portfolio__content-box--mobile--recrypt {
+		background-image: url('../img/recrypt-screenshot.png');
+	} */
+
+	.portfolio__content-box--mobile--project4 {
+
+	}
 
 	/* ========================= ABOUT ========================= */
 

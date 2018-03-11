@@ -312,8 +312,27 @@ li {
 	margin: 0 64px 0 32px;
 }
 
+.about__content-box--3 > img {
+	width: 90%;
+	margin: 5%;
+}
+
+.about__content-box--3 > p {
+    margin: 0 15px;
+}
+
 .about__footer {
 	grid-area: footer;
+}
+
+
+
+ul.about__text--skills {
+	margin: 0 45px 15px 45px;
+}
+
+.about__content-box--4 > p {
+	margin-bottom: 0;
 }
 
 .about__content-box--4 {
@@ -324,6 +343,12 @@ li {
 	margin: 0 36px 0 64px;
 }
 
+.about__text--skills > li {
+	display: inline;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
 .about__title {
 	font-size: 24px;
 	margin-left: 24px;
@@ -331,7 +356,7 @@ li {
 }
 
 .about__title--skills {
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 p.about__text--main {

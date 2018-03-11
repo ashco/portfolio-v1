@@ -617,6 +617,12 @@ ul.about__text--random {
 		margin: 1px;
 	} 
 
+	.contact__textbox > p {
+		text-align: left;
+		position: absolute;
+		left: 30px;
+		top: -10px;
+	}
 
 
 	.contact__box--slider--about {
@@ -647,15 +653,6 @@ ul.about__text--random {
 		left: 6.5%;
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -691,6 +688,8 @@ ul.about__text--random {
 		font-size: 22px;
 		margin-top: 12px;
 		margin: 30px 0;
+		position: absolute;
+		left: 20px;
 	}
 
 	.resume__icon--alt {
@@ -707,6 +706,8 @@ ul.about__text--random {
 		transition: none;
 		width: 80%;
 	}
+	
+
 
 
 
@@ -738,6 +739,19 @@ ul.about__text--random {
 	.contact__textbox--slider {
 		left: 30%;
 		width: 70%;
+	}
+
+	.contact__box {
+		height: 13%;
+	}
+	
+	.contact-box__mobile--container {
+		margin-bottom: 125px;
+	}
+
+	.contact__textbox > p {
+		left: 20px;
+		top: 5px;
 	}
 }
 

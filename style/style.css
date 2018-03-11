@@ -238,7 +238,7 @@ li {
 	/* display: flex;
 	flex-direction: column; */
 	text-align: center;
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 .portfolio__linkbox > p {
@@ -713,19 +713,21 @@ ul.about__text--random {
 	/* ========================= PORTFOLIO ========================= */
 	
 	.portfolio__content-box--mobile {
-		/* width: 90%; */
 		height: 120px;
-		/* padding: 0;
-		margin: 1px;
-		margin-left: 5%;
-		background-color: var(--grey-color);
-		background-size: cover;
-		background-position: center top; 
-		overflow: hidden;
-		margin-top: 20px; */
 	}
 
+	.portfolio__textbox--mobile {
+		/* background-color: var(--textbox-color); */
+		/* display: flex; */
+		/* flex-direction: column; */
+		bottom: -50%;
+		/* height: 100%; */
+		/* position: relative; */
+	}
 
+	.portfolio__linkbox > p {
+		font-size: 10px;
+	}
 
 	/* ========================= ABOUT ========================= */
 

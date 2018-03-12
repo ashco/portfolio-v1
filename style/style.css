@@ -74,7 +74,7 @@ li {
 
 .down-nav {
 	position: absolute;
-	bottom: 25px;
+	bottom: 30px;
 	left: 48%;
 	z-index: 1;
 }
@@ -247,6 +247,10 @@ li {
 	font-size: 16px;
 	text-decoration: underline;
 	font-weight: 500;
+}
+
+.down-nav--portfolio {
+	bottom: 15px;
 }
 
 /* ========================= ABOUT ========================= */
@@ -561,6 +565,11 @@ ul.about__text--random {
 		top: 71%;
 	}
 
+	.down-nav--about {
+		position: absolute;
+		bottom: 70px;
+	}
+
 
 	/* ========================= CONTACT ========================= */
 
@@ -668,6 +677,10 @@ ul.about__text--random {
 		bottom: 0%;
 	}
 	
+	.down-nav--home {
+		bottom: 30px;
+		left: 45%;
+	}
 
 	/* ========================= PORTFOLIO ========================= */
 	
@@ -690,7 +703,8 @@ ul.about__text--random {
 	}
 
 	.about__content-box--1 {
-		height: 73.5%;
+		/* height: 73.5%; */
+		height: 567px;
 		width: 90%;
 		margin: 0 5%;
 	}

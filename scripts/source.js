@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
 	//Page navigation
 	$('.main').fullpage({
 		anchors:['home', 'portfolio', 'about', 'contact']
@@ -13,18 +11,6 @@ $(document).ready(function() {
 		}, () => {
 		$('.navbar__link').css('color', '#fff');
 	});
-
-
-	// var waypoints = $('portfolio__textbox').waypoint({
-	// 	handler: function(){
-	// 		console.log('trigger')
-	// 	},
-	// 		offset: '5%'
-		
-
-	//   });
-
-
 
 });
 

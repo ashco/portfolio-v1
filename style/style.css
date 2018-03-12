@@ -663,6 +663,10 @@ ul.about__text--random {
 		transition: none;
 		width: 80%;
 	}
+
+	.resume__box--slider:hover .resume__textbox--slider {
+		bottom: 0%;
+	}
 	
 
 	/* ========================= PORTFOLIO ========================= */
